@@ -1,0 +1,235 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(deneme());
+}
+
+class deneme extends StatelessWidget {
+  const deneme({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+
+        appBar: AppBar(
+
+          leading: Column(
+            children: [
+              Image.asset("images/mtt.png"),
+            ],
+          ),
+          title: Text("Hi Shaiar"),
+         
+          actions: [
+            Column(
+              children: [
+                Icon(Icons.timer)
+              ],
+            ),
+          ],
+        ),
+        body: Container(
+          width: double.infinity,
+          color: Colors.greenAccent,
+          alignment: Alignment.bottomLeft,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Chose Your Cateogory"),
+                  Container(
+                    padding: EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 10),
+                          child: Container(
+                            color: Colors.white,
+                            height: 300,
+                            width: 300,
+                            child: Column(
+                              children: [
+                                Image.asset("images/image.png"),
+                                Text("Comedy"),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 10),
+                              child: Container(
+                                color: Colors.white,
+                                height: 300,
+                                width: 300,
+                                child: Column(
+                                  children: [
+                                    Image.asset("images/image.png"),
+                                    Text("Comedy"),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(right: 10),
+                                  child: Container(
+                                    color: Colors.white,
+                                    height: 300,
+                                    width: 300,
+                                    child: Column(
+                                      children: [
+                                        Image.asset("images/image.png"),
+                                        Text("Comedy"),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 10),
+                                child: Container(
+                                  color: Colors.white,
+                                  height: 300,
+                                  width: 300,
+                                  child: Column(
+                                    children: [
+                                      Image.asset("images/image.png"),
+                                      Text("Comedy"),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 10),
+                                    child: Container(
+                                      color: Colors.white,
+                                      height: 300,
+                                      width: 300,
+                                      child: Column(
+                                        children: [
+                                          Image.asset("images/image.png"),
+                                          Text("Comedy"),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(right: 10),
+                                        child: Container(
+                                          color: Colors.white,
+                                          height: 300,
+                                          width: 300,
+                                          child: Column(
+                                            children: [
+                                              Image.asset("images/image.png"),
+                                              Text("Comedy"),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text("Popular Movies"),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 10),
+                                child: Container(
+                                  height: 150,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(right: 10),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(right: 10),
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.only(right: 10),
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Image.asset("images/mtt.png"),
+                                              ],
+                                            ),
+                                          ),
+
+                                          Padding(
+                                            padding: const EdgeInsets.only(right: 10),
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Image.asset("images/mtt.png"),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
